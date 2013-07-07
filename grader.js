@@ -78,7 +78,7 @@ if(require.main == module) {
     program
         .option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT)
         .option('-f, --file <html_file>', 'Path to checked file', clone(assertFileExists), HTMLFILE_DEFAULT)
-        .option('-u, --url <html_url>', 'URL to be checked. Overrdes --file option')
+        .option('-u, --url <html_url>', 'URL to be checked. Overrides --file option')
         .parse(process.argv);
 
     if(program.url) {
